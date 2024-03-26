@@ -17,15 +17,25 @@ function printMyName(){
     document.getElementById("output").innerHTML = myname
 }
 
-let cities = ['faisalabad','multan','karachi', 'lahore','peshawar','hasilpur']
+let cities = ['Faisalabad','Multan','Karachi', 'Lahore','Peshawar','Hasilpur']
 function printAllCities(){
 document.getElementById("output").innerHTML="";
 
 
 
-for ( let index = 0; index < 6; index++){
+for ( let index = 0; index < cities.length; index++){
  let city = cities[index]
  console.log('city', city)
  document.getElementById("output").innerHTML += index +")" + city +"<br/>"
 }
+}
+
+function addYourCitiesInList(){
+    let city = document.getElementById("inputText").value;
+    if(city === ""){
+        alert("please type your city")
+return;
+    }
+    cities.push(city);
+    document.getElementById("output").innerHTML = '<span style="color: green ; font-size: 20px">"'+ city +'"</span> has been succesfully added into list.';
 }
