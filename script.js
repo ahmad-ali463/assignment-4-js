@@ -26,6 +26,6 @@ document.getElementById("output").innerHTML="";
 for ( let index = 0; index < 6; index++){
  let city = cities[index]
  console.log('city', city)
- document.getElementById("output").innerHTML += city
+ document.getElementById("output").innerHTML += index +")" + city +"<br/>"
 }
 }
