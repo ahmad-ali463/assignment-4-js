@@ -9,58 +9,73 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-secondary">
+        <nav class="navbar navbar-expand-lg bg-dark">
             <div class="container">
-              <a class="navbar-brand" href="#">Navbar</a>
+              <a class="navbar-brand" href="#">Assignment</a>
               <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-danger" type="submit">Search</button>
+                  <button class="btn btn btn-dark" type="submit">Search</button>
                 </form>
               </div>
             </div>
           </nav>
     </header>
     <main>
-        <h3 class="text-center mt-4">Input</h3>
-        <div class="container aa">
-            <div class="row  ">
-                <div class="col">
-                   
-                    <div class="input-group">
-                        <input type="text" class="form-control py-0" placeholder="Type your text here" aria-label="Recipient's username" aria-describedby="button-addon2" id="inputText">
-                        <!-- <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button> -->
-                      </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container mt-3 text-center">
-            <h4 class="mb-2">Buttons</h4>
-            <div class="row ff mt-2">
-                <div class="col-12 col-lg-6 ">
-                    <div class="bb mt-2 py-4">
-                        <button class="btn  btn-danger px-5 border rounded-0 mb-1" onclick="simpleAlert()" >Simple Alert</button>
-                        <button class="btn  btn-danger px-5 border rounded-0 mb-1" onclick="printMyName()">print My Name</button>
-                        <button class="btn  btn-danger px-5 border rounded-0 mb-1 "onclick="printAllCities()">print All cities</button>
-                        <button class="btn  btn-danger px-5 border rounded-0 mb-1" onclick="addYourCitiesInList()">Add your cities in list</button>
-                        <button class="btn  btn-danger px-5 border rounded-0">Generate Table</button>
+       <h4 class="text-center mt-4">chapter # 15 to 20</h4>
+       <div class="container">
+           <div class="row mt-4 ">
+               <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                   <h3 class="text-center">Input</h3>
+                    <div class="border rounded-3 h-75 p-3 d-flex align-item-center ">
+                        <!-- <div class="input-group">
+                            <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                           
+                          </div> -->
+                          <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Type Your text here" id="inputText" >
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+                          </div>
                     </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-5">
+                    <h3 class="text-center ">Original string</h3>
+                    <div class="border rounded-3 h-75 p-2 d-flex align-item-center text-white bg-dark  ">
+                        <div class="text-center">
+                            &nbsp;  1) Faisalabad &nbsp; 2) Islamabad  &nbsp; 3) Lahore &nbsp; 4) Karachi &nbsp;
+5)   kashmir &nbsp; 6) Rawalpinidi &nbsp; 7) Gojra                   
+ </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 col-sm-12 col-md-6  col-lg-6 text-center">
+                    <h3 class="text-center mt-4">Buttons</h3>
+                    <div class="border rounded-3  p-4">
+                        <button class="btn btn-lg btn-danger mb-2" onclick="simpleAlert()">Simple Alert</button>
+                        <button class="btn btn-lg btn-danger mb-2" onclick="printMyName()">Print My Name</button>
+                        <br>
+                        <button class="btn btn-lg btn-danger mb-2" onclick="printAllCities()">Print Cities</button>
+                        <button class="btn btn-lg btn-danger mb-2" onclick="addYourCitiesInList()">Add Cities in list</button>
+                        <br>
+                        <button class="btn btn-lg btn-danger mb-2" onclick="generateTable()">Genrate Table</button>
+
+                    </div>
+
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 text-center">
+                    <h3 class="text-center mt-4">Output/Result</h3>
+                    <div class="border rounded-3  h-75" id="output"></div>
+                    <button class=" btn btn-outline-secondary mt-3 " id="clear">Clear statement</button>
+                </div>
+            </div>
+
+          </div>
+             
+       
                  
-                </div>
-            </div>
-        </div>
 
-        <div class="container text-center">
-            <h4 class="mt-5 mb-3">Output/Result</h4>
-            <div class="row ">
-                <div class="col">
-             <div class="output " id="output">
-
-             </div>
-                </div>
-            </div>
-        </div>
-    </main>
+       
 
 
 

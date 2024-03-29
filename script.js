@@ -2,7 +2,8 @@
 //     alert("I am in alert")
 // }
 function simpleAlert(){
-    alert("I am in alert")
+    alert("I am in Alert")
+    document.getElementById("output").innerHTML =  "I am in Alert"
 
 }
 
@@ -17,7 +18,7 @@ function printMyName(){
     document.getElementById("output").innerHTML = myname
 }
 
-let cities = ['Faisalabad','Multan','Karachi', 'Lahore','Peshawar','Hasilpur']
+let cities = ['Faisalabad','Islamabad', 'Lahore', 'Karachi','Kashmir','Rawalpindi','Gojra']
 function printAllCities(){
 document.getElementById("output").innerHTML="";
 
@@ -38,4 +39,25 @@ return;
     }
     cities.push(city);
     document.getElementById("output").innerHTML = '<span style="color: green ; font-size: 20px">"'+ city +'"</span> has been succesfully added into list.';
+}
+
+
+
+
+
+
+
+function generateTable(){
+    tablenum =  +prompt("Please Enter the Table Number")
+    
+    for(let i=1; i<11; i++){
+        let table = tablenum + " * " + i + " = " + tablenum*i + "<br />"
+        document.getElementById("ouput").innerHTML += table
+
+    }
+}
+
+
+document.getElementById("clear").onclick = function (){
+    document.getElementById("output").innerHTML = "";
 }
